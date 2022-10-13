@@ -1,29 +1,62 @@
-<body id="imwb">
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document
-    </title>
-    <div id="przyciski">
-        <a href="/inf2a" id="i33w">
-        Informatyka 2a  
-      </a>
-        <a href="/inf2b" id="irgn">
-        Informatyka 2b  
-      </a>
-        <a href="/inf4b" id="i8xdw">
-        Informatyka 4b  
-      </a>
-        <a href="/mibm" id="iizze">
-        Mechanika i budowa maszyn 1gr  
-      </a>
-    </div>
-    <div id="i1c57">
-    </div>
-    <div id="i5cw5">
-    </div>
-    <iframe frameborder="0" id="open-web-calendar" src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fwww.plany.ath.bielsko.pl%2Fplan.php%3Ftype%3D0%26id%3D8840%26cvsfile%3Dtrue%26w%3D590&title=Plan%20zaj%C4%99%C4%87%20ATH&language=pl&tab=week"
-        sandbox="allow-scripts allow-same-origin allow-top-navigation" allowtransparency="true" scrolling="no" height="100%" width="100%"></iframe>
+<body id="igm1">
+    <header class="header-banner" id="ismk">
+        <div class="container-width" id="icvp">
+            <div class="logo-container">
+            </div>
+            <nav class="menu" id="i4v3">
+                <div class="menu-item" id="ic08">MiBM
+                </div>
+                <div class="menu-item" id="izkx">Inf 4b
+                </div>
+                <div class="menu-item" id="insbv">Inf 2b
+                </div>
+                <div class="menu-item" id="ixcej">Inf 2a
+                </div>
+            </nav>
+            <div class="clearfix">
+            </div>
+        </div>
+    </header>
+    <iframe frameborder="0" id="open-web-calendar" src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fwww.plany.ath.bielsko.pl%2Fplan.php%3Ftype%3D0%26id%3D8840%26cvsfile%3Dtrue%26w%3D581&title=ATH&language=pl&tab=week" sandbox="allow-scripts allow-same-origin allow-top-navigation"
+        allowtransparency="true" scrolling="no" height="600px" width="100%"></iframe>
+    <section class="blk-sect" id="iavqc">
+        <div class="container-width" id="ipdy2">
+            <div class="blk-title" id="i3v0u">
+                <b>
+            <span id="iudp3">Oznaczenia</span>
+          </b>
+            </div>
+            <div id="iooj5">
+                <b>Aisd 
+          </b>- Algorytmy i struktury danych, występowanie: Stacjonarne
+                <br/>
+                <b>Alzga 
+          </b>- Algebra liniowa z geometrią analityczną, występowanie: S Parzyste
+                <br/>
+                <b>AmI 
+          </b>- Analiza matematyczna I, występowanie: Stacjonarne
+                <br/>
+                <b>Bpie 
+          </b>- Bezpieczeństwo pracy i ergonomia, występowanie: Stacjonarne
+                <br/>
+                <b>Hc 
+          </b>- Historia cywilizacji, występowanie: Stacjonarne
+                <br/>
+                <b>Ksiaz 
+          </b>- Komunikacja społeczna i aktywizacja zawodowa, występowanie: Stacjonarne
+                <br/>
+                <b>PI 
+          </b>- Programowanie I, występowanie: Stacjonarne
+                <br/>
+                <b>Pe 
+          </b>- Podstawy elektrotechniki, występowanie: Stacjonarne
+                <br/>
+                <b>Pick 
+          </b>- Podstawy interakcji człowiek komputer, występowanie: Stacjonarne
+                <br/>
+            </div>
+        </div>
+    </section>
 </body>
 <style>
     * {
@@ -42,43 +75,105 @@
         margin: 0;
     }
     
-    #przyciski {
-        display: flex;
-        margin: 10px;
+    .clearfix {
+        clear: both;
     }
     
-    #i33w {
-        text-decoration: none;
-        color: #000000;
+    .header-banner {
+        padding-top: 35px;
+        padding-bottom: 100px;
+        color: #ffffff;
+        font-family: Helvetica, serif;
+        font-weight: 100;
+        background-image: url("https://grapesjs.com/img/bg-gr-v.png"), url("https://grapesjs.com/img/work-desk.jpg");
+        background-attachment: scroll, scroll;
+        background-position: left top, center center;
+        background-repeat: repeat-y, no-repeat;
+        background-size: contain, cover;
     }
     
-    #irgn {
-        text-decoration: none;
-        color: #000000;
+    .container-width {
+        width: 90%;
+        max-width: 1150px;
+        margin: 0 auto;
     }
     
-    #i8xdw {
-        text-decoration: none;
-        color: #000000;
+    .logo-container {
+        float: left;
+        width: 50%;
     }
     
-    #iizze {
-        text-decoration: none;
-        color: #000000;
+    .menu {
+        float: right;
+        width: 50%;
     }
     
-    #i1c57 {
-        display: flex;
+    .menu-item {
+        float: right;
+        font-size: 15px;
+        color: #eee;
+        width: 130px;
+        padding: 10px;
+        min-height: 50px;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 400;
+    }
+    
+    .blk-sect {
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-color: #222222;
+        font-family: Helvetica, serif;
+    }
+    
+    .blk-title {
+        color: #fff;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 15px;
     }
     
     #open-web-calendar {
         background: url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;
-        height: 1037px;
-        width: 2176px;
-        float: none;
+        height: 1074px;
+        width: 2166px;
     }
     
-    #i5cw5 {
+    #ismk {
+        padding: 35px 0 30px 0;
+    }
+    
+    #i4v3 {
         float: left;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+    }
+    
+    #iavqc {
+        color: #ffffff;
+    }
+    
+    #i3v0u {
+        float: none;
+        display: block;
+        position: static;
+    }
+    
+    #iooj5 {
+        padding: 10px;
+    }
+    
+    @media (max-width: 992px) {
+        #open-web-calendar {
+            height: 1071px;
+            width: 760px;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        #open-web-calendar {
+            width: 310px;
+        }
     }
 </style>
