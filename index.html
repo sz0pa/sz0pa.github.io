@@ -1,132 +1,30 @@
 <body id="imwb">
-    <header class="header-banner" id="igwp">
-        <div class="gjs-row" id="iqniu">
-            <div class="gjs-cell" id="ib81o">
-                <div id="iovo7">
-                    <div role="tablist" class="tab-container">
-                        <div role="tab" aria-controls="irfia" id="i293v" class="tab">
-                            <span id="it8ho"><a href="" id="inzlf">Informatyka 2a</a></span>
-                        </div>
-                        <div role="tab" aria-controls="i0qbp" id="ildde" class="tab">
-                            <span id="i1uoi">Tab</span>
-                        </div>
-                        <div role="tab" aria-controls="is4al" id="i2ugt" class="tab">
-                            <span>Tab</span>
-                        </div>
-                    </div>
-                    <div class="tab-contents">
-                        <div role="tabpanel" id="irfia" aria-labelledby="i293v" hidden class="tab-content">
-                            <div id="iqp2b">Tab Content
-                            </div>
-                        </div>
-                        <div role="tabpanel" id="i0qbp" aria-labelledby="ildde" hidden class="tab-content">
-                            <div>Tab Content
-                            </div>
-                        </div>
-                        <div role="tabpanel" id="is4al" aria-labelledby="i2ugt" hidden class="tab-content">
-                            <div>Tab Content
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <section id="i2gkv" class="flex-sect">
-            <div id="i41cl" class="container-width">
-                <div id="iglnq" class="flex-title">
-                    <iframe frameborder="0" id="open-web-calendar" src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fwww.plany.ath.bielsko.pl%2Fplan.php%3Ftype%3D0%26id%3D8840%26cvsfile%3Dtrue%26w%3D590&title=Plan%20zaj%C4%99%C4%87%20ATH&language=pl&tab=week"
-                        sandbox="allow-scripts allow-same-origin allow-top-navigation" allowtransparency="true" scrolling="no" height="100%" width="100%"></iframe>
-                    <br/>
-                    <br/>
-                </div>
-                <div id="iak2p" class="flex-desc">
-                    <div id="iyyn1c">
-                        <div id="ilg1av">
-                            <a href="" id="i0re98"></a>
-                            <br/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <section class="am-sect">
-        <div class="container-width">
-        </div>
-    </section>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document
+    </title>
+    <div id="przyciski">
+        <a href="/inf2a" id="i33w">
+        Informatyka 2a  
+      </a>
+        <a href="/inf2b" id="irgn">
+        Informatyka 2b  
+      </a>
+        <a href="/inf4b" id="i8xdw">
+        Informatyka 4b  
+      </a>
+        <a href="/mibm" id="iizze">
+        Mechanika i budowa maszyn 1gr  
+      </a>
+    </div>
+    <div id="i1c57">
+    </div>
+    <div id="i5cw5">
+    </div>
+    <iframe frameborder="0" id="open-web-calendar" src="https://open-web-calendar.herokuapp.com/calendar.html?url=https%3A%2F%2Fwww.plany.ath.bielsko.pl%2Fplan.php%3Ftype%3D0%26id%3D8840%26cvsfile%3Dtrue%26w%3D590&title=Plan%20zaj%C4%99%C4%87%20ATH&language=pl&tab=week"
+        sandbox="allow-scripts allow-same-origin allow-top-navigation" allowtransparency="true" scrolling="no" height="100%" width="100%"></iframe>
 </body>
-<script>
-    var props = {
-        "iovo7": {
-            "classactive": "tab-active",
-            "selectortab": "aria-controls"
-        }
-    };
-    var ids = Object.keys(props).map(function(id) {
-        return '#' + id
-    }).join(',');
-    var els = document.querySelectorAll(ids);
-    for (var i = 0, len = els.length; i < len; i++) {
-        var el = els[i];
-        (function(t) {
-                var e, n, r = this,
-                    o = t.classactive,
-                    a = t.selectortab,
-                    c = window,
-                    i = c.history,
-                    s = c._isEditor,
-                    b = '[role=tab]',
-                    p = document,
-                    l = p.body,
-                    u = p.location,
-                    f = l.matchesSelector || l.webkitMatchesSelector || l.mozMatchesSelector || l.msMatchesSelector,
-                    y = function(t, e) {
-                        for (var n = t || [], r = 0; r < n.length; r++) e(n[r], r)
-                    },
-                    d = function(t) {
-                        return t.getAttribute(a)
-                    },
-                    O = function(t, e) {
-                        return t.querySelector(e)
-                    },
-                    g = function() {
-                        return r.querySelectorAll(b)
-                    },
-                    j = function(t, e) {
-                        return !s && (t.tabIndex = e)
-                    },
-                    h = function(t) {
-                        y(g(), (function(t) {
-                            t.className = t.className.replace(o, '').trim(), t.ariaSelected = 'false', j(t, '-1')
-                        })), y(r.querySelectorAll("[role=tabpanel]"), (function(t) {
-                            return t.hidden = !0
-                        })), t.className += ' ' + o, t.ariaSelected = 'true', j(t, '0');
-                        var e = d(t),
-                            n = e && O(r, "#".concat(e));
-                        n && (n.hidden = !1)
-                    },
-                    v = O(r, ".".concat(o).concat(b));
-                (v = v || (n = (u.hash || '').replace('#', '')) && O(r, (e = a, "".concat(b, "[").concat(e, "=").concat(n, "]"))) || O(r, b)) && h(v), r.addEventListener('click', (function(t) {
-                    var e = t.target,
-                        n = f.call(e, b);
-                    if (n || (e = function(t) {
-                                var e;
-                                return y(g(), (function(n) {
-                                    e || n.contains(t) && (e = n)
-                                })), e
-                            }
-                            (e)) && (n = 1), n && !t.__trg && e.className.indexOf(o) < 0) {
-                        t.preventDefault(), t.__trg = 1, h(e);
-                        var r = d(e);
-                        try {
-                            i && i.pushState(null, null, "#".concat(r))
-                        } catch (t) {}
-                    }
-                }))
-            }
-            .bind(el))(props[el.id]);
-    }
-</script>
 <style>
     * {
         box-sizing: border-box;
@@ -144,123 +42,43 @@
         margin: 0;
     }
     
-    .header-banner {
-        padding-top: 35px;
-        padding-bottom: 100px;
-        color: #ffffff;
-        font-family: Helvetica, serif;
-        font-weight: 100;
-        background-image: url("https://grapesjs.com/img/bg-gr-v.png"), url("https://grapesjs.com/img/work-desk.jpg");
-        background-attachment: scroll, scroll;
-        background-position: left top, center center;
-        background-repeat: repeat-y, no-repeat;
-        background-size: contain, cover;
+    #przyciski {
+        display: flex;
+        margin: 10px;
     }
     
-    .container-width {
-        width: 90%;
-        max-width: 1150px;
-        margin: 0 auto;
+    #i33w {
+        text-decoration: none;
+        color: #000000;
     }
     
-    .flex-sect {
-        background-color: #fafafa;
-        padding: 100px 0;
-        font-family: Helvetica, serif;
+    #irgn {
+        text-decoration: none;
+        color: #000000;
     }
     
-    .flex-title {
-        margin-bottom: 15px;
-        font-size: 2em;
-        text-align: center;
-        font-weight: 700;
-        color: #555;
-        padding: 5px;
+    #i8xdw {
+        text-decoration: none;
+        color: #000000;
     }
     
-    .flex-desc {
-        margin-bottom: 55px;
-        font-size: 1em;
-        color: rgba(0, 0, 0, 0.5);
-        text-align: center;
-        padding: 5px;
+    #iizze {
+        text-decoration: none;
+        color: #000000;
     }
     
-    .am-sect {
-        padding-top: 100px;
-        padding-bottom: 100px;
-        font-family: Helvetica, serif;
-    }
-    
-    #iyyn1c {
-        color: rgb(171, 178, 191);
-        background-color: rgb(35, 39, 46);
-        font-family: Consolas, "Courier New", monospace;
-        font-size: 17px;
-        line-height: 23px;
-        white-space: pre;
+    #i1c57 {
+        display: flex;
     }
     
     #open-web-calendar {
         background: url('https://raw.githubusercontent.com/niccokunzmann/open-web-calendar/master/static/img/loaders/circular-loader.gif') center center no-repeat;
-        height: 1004px;
+        height: 1037px;
+        width: 2176px;
+        float: none;
     }
     
-    .gjs-row {
-        display: flex;
-        justify-content: flex-start;
-        align-items: stretch;
-        flex-wrap: nowrap;
-        padding: 10px;
-    }
-    
-    .gjs-cell {
-        min-height: 75px;
-        flex-grow: 1;
-        flex-basis: 100%;
-    }
-    
-    .tab {
-        padding: 7px 14px;
-        display: inline-block;
-        border-radius: 3px;
-        margin-right: 10px;
-    }
-    
-    .tab:focus {
-        outline: none;
-    }
-    
-    .tab.tab-active {
-        background-color: #0d94e6;
-        color: white;
-    }
-    
-    .tab-container {
-        display: inline-block;
-    }
-    
-    .tab-content {
-        animation: fadeEffect 1s;
-    }
-    
-    .tab-contents {
-        min-height: 100px;
-        padding: 10px;
-    }
-    
-    @media fadeEffect {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    @media (max-width: 768px) {
-        .gjs-row {
-            flex-wrap: wrap;
-        }
+    #i5cw5 {
+        float: left;
     }
 </style>
