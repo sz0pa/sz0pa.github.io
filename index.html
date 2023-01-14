@@ -25,6 +25,17 @@
             </div>
         </div>
     </header>
+    <script>
+        const weeklyIncrement = () => {
+            let currentCount = 595;
+            setInterval(() => {
+                currentCount++;
+                document.getElementById("open-web-calendar").src = `https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fwww.plany.ath.bielsko.pl%2Fplan.php%3Ftype%3D0%26id%3D8840%26cvsfile%3Dtrue%26w%3D${currentCount}&language=pl&tab=week`;
+            }, 604800000); // 604800000 milliseconds is one week
+        }
+
+        weeklyIncrement();
+    </script>
     <iframe frameborder="0" id="open-web-calendar" src="https://open-web-calendar.hosted.quelltext.eu/calendar.html?url=https%3A%2F%2Fwww.plany.ath.bielsko.pl%2Fplan.php%3Ftype%3D0%26id%3D8840%26cvsfile%3Dtrue%26w%3D595&amp;language=pl&amp;tab=week" sandbox="allow-scripts allow-same-origin allow-top-navigation"
         allowtransparency="true" scrolling="no" height="600px" width="100%"></iframe>
     <section id="iavqc" class="blk-sect">
